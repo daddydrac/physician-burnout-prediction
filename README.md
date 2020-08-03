@@ -9,7 +9,7 @@ Using causal inference to improve upon the results of previous physician burn ou
 | Hela Bahria, Sr. Data Scientist  | Joe Hoeller, Data Scientist I | Greg Chase, Sr. Data Scientist |
 | ------------- | ------------- | ---------------- |
 | M.S. in Engineering in statistics, Data Analysis & Physics  | Deep Learning & Software Engineer  | Acclerated GPU Computing Expert |
-| hela@aktiver.io | joe@aktiver.io | greg@aktiver.io
+| hela@aktiver.io | joe@aktiver.io | greg@aktiver.io |
 
 
 #### Data description:
