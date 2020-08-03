@@ -1,4 +1,18 @@
-Data description:
+### Prediciting Physician Burnout with Causal Inference
+
+Using causal inference to improve upon the results of previous physician burn out models
+
+------------------------------------------------------------
+
+#### Researchers:
+
+Hela Bahria, Sr. Data Scientist             Joe Hoeller, Data Scientist I                     Greg Chase, Sr. Data Scientist                 
+M.S. in Engineering in statistics,          Deep Learning & Software Engineer                 Acclerated GPU Computing Expert           
+Data Analysis & Physics                     joe@aktiver.io                                    greg@aktiver.io
+hela@aktiver.io
+
+
+#### Data description:
 The following are the features that can be found in the dataset of physicians in the US as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
 
 ID
