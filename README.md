@@ -15,30 +15,33 @@ Using causal inference to improve upon the results of previous physician burn ou
 #### Data description:
 The following are the features that can be found in the dataset of physicians in the US as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
 
-ID
-Age / Years of experience : 3 Generations
-millenials(25-39 years old)
-Generation X(40-54 years old)
-baby boomers(55-73 years old)
-Specialities : ( possible values) there are 1.1 million (1 100 000) doctors in USA
-Allergist / Immunologist: 4551 , 0.41%, 0.45%
-Anesthesiologist: 57300 , 5.2%, 5.7%
-Dermatologist: 15275 , 1.39%, 1.52%
-Emergency Doctor: 60090, 5.46%, 5.98%
-Family Doctor: 140732, 12.8%, 14%
-Internist: 260257,  23.66%, 25.9%
-Neurological Surgeon: 7296, 0.66%, 0.73%
-Obstetrician / Gynecologist: 51916 , 4.72%, 5.17% 
-Orthopedic Surgeon: 32777, 2.98%, 3.26%
-Otolaryngologist: 12971, 1.18%, 1.29%
-Pathologist: 21153, 1.92%, 2.1%
-Pediatrician: 94900, 8.62%, 9.44%
-Plastic Surgeons: 5399, 0.49%, 0.54%
-Psychiatrist / Neurologist: 79721, 7.25%, 7.93%
-Radiologist: 51685, 4.7%, 5.14%
-Surgeons: 42585, 3.87%, 4.24%
-Urologist: 13019, 1.18%, 1.29%
-Optometrist: 56239, 5.11%, 5.6%
+
+#### Age / Years of experience : 3 Generations
+ - millenials(25-39 years old)
+ - Generation X(40-54 years old)
+ - baby boomers(55-73 years old)
+ 
+ 
+#### Specialities : There are 1.1 million (1 100 000) doctors in USA
+ - Allergist / Immunologist: 4551 , 0.41%, 0.45%
+ - Anesthesiologist: 57300 , 5.2%, 5.7%
+ - Dermatologist: 15275 , 1.39%, 1.52%
+ - Emergency Doctor: 60090, 5.46%, 5.98%
+ - Family Doctor: 140732, 12.8%, 14%
+ - Internist: 260257,  23.66%, 25.9%
+ - Neurological Surgeon: 7296, 0.66%, 0.73%
+ - Obstetrician / Gynecologist: 51916 , 4.72%, 5.17% 
+ - Orthopedic Surgeon: 32777, 2.98%, 3.26%
+ - Otolaryngologist: 12971, 1.18%, 1.29%
+ - Pathologist: 21153, 1.92%, 2.1%
+ - Pediatrician: 94900, 8.62%, 9.44%
+ - Plastic Surgeons: 5399, 0.49%, 0.54%
+ - Psychiatrist / Neurologist: 79721, 7.25%, 7.93%
+ - Radiologist: 51685, 4.7%, 5.14%
+ - Surgeons: 42585, 3.87%, 4.24%
+ - Urologist: 13019, 1.18%, 1.29%
+ - Optometrist: 56239, 5.11%, 5.6%
+
 
 4) States:  (54 possible values)
 
