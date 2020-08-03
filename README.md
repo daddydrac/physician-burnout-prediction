@@ -1,6 +1,6 @@
 ### Prediciting Physician Burnout with Causal Inference
 
-Using causal inference to improve upon the results of previous physician burn out models using risk stratification
+Using causal inference to improve upon the results of previous physician burn out models with risk stratification
 
 ------------------------------------------------------------
 
