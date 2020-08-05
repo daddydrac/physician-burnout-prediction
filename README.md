@@ -27,7 +27,11 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG)
  
  #### Gender: 
+ Based on  the distibution of active physicians by age group (4 groups) for each genger, we can generate successfuly the gender of physicians for this study.
+ 
  The graph shows the percentage of active physicians by age group for each gender in 2017.
+ 
+ 
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_gender.PNG)
  
  
