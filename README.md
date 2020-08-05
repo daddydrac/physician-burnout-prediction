@@ -16,7 +16,7 @@ Using causal inference to improve upon the results of previous physician burn ou
 The following are the features that can be found in the dataset of physicians in the USA as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
 
 
-#### Age: 4 age groups
+##### Age: 4 age groups
 As of 2018, the largest distribution of U.S. physicians was between the ages of 55 and 65 years old. At that time about 29 percent of physicians fell within this age group. With just 11.2 percent of all physicians, the smallest distribution of U.S. physicians was among those aged 35 years or younger.
 
  - 11.2% of population is age range from 25-35
@@ -26,7 +26,7 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  - 17% of population is age range 66-75
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG)
  
- #### Gender: 
+ ##### Gender: 
  Based on  the distribution of active physicians by age group (4 groups) for each gender in USA, we can generate successfuly the gender of physicians for this study.
  
  The graph shows the percentage of active physicians by age group for each gender in 2017.
@@ -35,7 +35,7 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_gender.PNG)
  
  
-#### Specialities : There are 1.1 million (1 100 000) doctors in USA
+##### Specialities : There are 1.1 million (1 100 000) doctors in USA
 
 Based on the description of U.S. Physicians Database which combines all of the individual state databases into one national database and covers every city and state with a registered physician, we can extract the distribution of active physicians by specialty (18 specialties).
 
@@ -61,12 +61,56 @@ Based on the description of U.S. Physicians Database which combines all of the i
 [Source:] https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0KCQjwvIT5BRCqARIsAAwwD-TfZkr9UJ1cTGAZjmXqdE1IiX_PklVG9q5W6hDxeMcBlLdecIR4AswaAvMmEALw_wcB
 
 
-#### Compensation : 
+##### Compensation : 
 
 Based on the average annual physicians compensation, we can generate the salary of physicians by gender for each specialties considering that women earned 30% less than men overall and a variance of 10% compared to the average salary of each gender.
 The graph below shows the average annual physicians compensation by specialty reported in 2019.
 
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/annual-compenstation.png)
+
+#### Relevant burned out statistics observed in physicians, US
+
+In 2020, 42% of physicians reported that they burned out down from 46% 5 years ago.
+
+##### Which Generation is most burnout ?
+
+During the burnout study, we will use 3 age groups of physicians:
+
+- millenials(25-39 years old)
+- Generation X(40-54 years old)
+- baby boomers(55-73 years old)
+
+Based on the graph below, the Generation X physicians report noticeably more burnout than other groups.
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-by-age-range.png)
+ 
+#####  Which gender is most burned out ?
+Women have consistently reported higher percentages of burnout than men over the years.
+The graph below shows the proportions of physicians burnout by gender in 2019.
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-by-gender.png)
+
+#####  Which specialties are most burned out ?
+Specialties that were among the top in burnout in 2019:
+- Urolgy
+- Neurolgy
+Following is a bar chart describing burnout cases per specialty during the year of 2019.
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout.png)
+
+##### Where are physicians most burned Out?
+
+Solo practice has been declining over the years and now comprises only about 15% of physicians.
+The graph below shows where are physicians most burned out.
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-by-specialty.png)
+
+##### What contributes most to burnout?
+
+There are several factors that have been contributing to physician burnout in US over years.
+The graph below shows the contributor factors according to physcians who reported burnout knowing that a respondent could select more than one contributor variable
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-factors.png)
+
+###### Bureaucratic tasks
+
+
+
 
 
 
