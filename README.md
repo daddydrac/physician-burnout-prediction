@@ -58,64 +58,15 @@ Based on the description of U.S. Physicians Database which combines all of the i
  - Urologist: 13019, 1.29%
  - Optometrist: 56239, 5.6%
  
-[Source:](https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0KCQjwvIT5BRCqARIsAAwwD-TfZkr9UJ1cTGAZjmXqdE1IiX_PklVG9q5W6hDxeMcBlLdecIR4AswaAvMmEALw_wcB)
-
-4) States:  (54 possible values)
+[Source:] https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0KCQjwvIT5BRCqARIsAAwwD-TfZkr9UJ1cTGAZjmXqdE1IiX_PklVG9q5W6hDxeMcBlLdecIR4AswaAvMmEALw_wcB
 
 
-5) Gender 
-Professionally Active Physicians by Gender
-Gender distribution by speciality
+#### Compensation : 
 
+Based on the average annual physicians compensation, we can generate the salary of physicians by gender for each specialties considering that women earned 30% less than men overall and a variance of 10% compared to the average salary of each gender.
+The graph below shows the average annual physicians compensation by specialty reported in 2019.
 
-6)   Working place: (8 possible values)
-Describing the nature of their workplace which could be a hospital, a clinic, etc..
-
-7)  Physicians compensation:
-by speciality :
-Orthopedics and Cardiology have been among the top-earning specialties
-in the survey every year for the past 5 years.Pediatrics, family medicine, and diabetes and endocrinology have been among the lowest.
-
-
-
-By gender:
-
-
-BY race:
-Caucasian/white physicians earn more than physicians of other races.
-
-
-
-7)  Job performance satisfaction :
-It an ordinal categorical variable that describes how the physician rates their satisfaction with their job on a scale 0-4.
-
-8) Lifestyle & Happiness:
-We have multiples measure with which we can calculate a lifestyle and happiness index.
-E.g. Generation, specialty, health and wellness, vacation, work hours, marriage, exercice, etc..
-This index would logically correlate with our target variable (burnout). You can find more details in the reference attached to this report.    
-
-
-
-
-
-
-
- 
-Study of burned out statistics observed in physicians, US.
-During this study, we will go over the correlation of the features we have discussed in the previous section with our target feature: burnout. This is an important part as it define the generation of the burnout labels. 
-E. g. if we notice that physicians in some specialities show more tendencies to burnout then we’ll generate data that mirrors that but attributing the positive label for the burnout variable more to individuals in those specialties. 
-
-In 2020, 42% of physicians reported that they burned out down from 46% 5 years ago.
-
-Which Specialties are most burnout ?
-Specialties that have been among the top in burnout over past 5 years (ordered):
-Critical care
-Emergency medicine
-Family medicine
-Neurolgy
-Urolgy
-
-Following is a bar chart describing burnout cases per specialty during the year of 2019.
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/annual-compenstation.png)
 
 
 
@@ -128,49 +79,4 @@ Following is a bar chart describing burnout cases per specialty during the year 
 
 
 
-2. Which Generation is most burnout ?
 
-  Generation X physicians report noticeably more burnout than other groups.
-   
-3. Which gender is most burned out ?
-
-Women have consistently reported higher percentages of burnout than
-men over the years.
-In 2015, a greater proportion of women(51%) than men (43%) said they were burned out.
-
-
-
-
-4. What Contributes most to Burnout ?
-
-Top causes of burnout over years:
-Long hours
-Overwhelming workload
-Lack of support
-
-5. Where Are physicians Most Burned Out?
-
-Solo practice has been declining over the years and now comprises only about 15% of physicians.
-
-
-
-
-
-
-
-
-
-Does your workplace offer a program to reduce stress and/or burnout?
-
-A little more than a quarter (28%) of physicians say their workplaces offer stress reduction programs, while half say their workplaces don't. 
-
-
-
-Are physicians depressed?
-Burnout may lead to depression.
-
-
-References:
-https://www.medscape.com/slideshow/2020-lifestyle-happiness-6012424
-https://www.medscape.com/slideshow/2020-lifestyle-burnout-6012460
-https://www.medscape.com/slideshow/2019-compensation-overview-6011286
