@@ -13,7 +13,7 @@ Using causal inference to improve upon the results of previous physician burn ou
 
 
 #### Data description:
-The following are the features that can be found in the dataset of physicians in the US as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
+The following are the features that can be found in the dataset of physicians in the USA as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
 
 
 #### Age: 4 age groups
@@ -27,7 +27,7 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG)
  
  #### Gender: 
- Based on  the distribution of active physicians by age group (4 groups) for each gender in US, we can generate successfuly the gender of physicians for this study.
+ Based on  the distribution of active physicians by age group (4 groups) for each gender in USA, we can generate successfuly the gender of physicians for this study.
  
  The graph shows the percentage of active physicians by age group for each gender in 2017.
  
@@ -35,32 +35,30 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_gender.PNG)
  
  
- 
-
- 
- 
- 
- 
 #### Specialities : There are 1.1 million (1 100 000) doctors in USA
- - Allergist / Immunologist: 4551 , 0.41%, 0.45%
- - Anesthesiologist: 57300 , 5.2%, 5.7%
- - Dermatologist: 15275 , 1.39%, 1.52%
- - Emergency Doctor: 60090, 5.46%, 5.98%
- - Family Doctor: 140732, 12.8%, 14%
- - Internist: 260257,  23.66%, 25.9%
- - Neurological Surgeon: 7296, 0.66%, 0.73%
- - Obstetrician / Gynecologist: 51916 , 4.72%, 5.17% 
- - Orthopedic Surgeon: 32777, 2.98%, 3.26%
- - Otolaryngologist: 12971, 1.18%, 1.29%
- - Pathologist: 21153, 1.92%, 2.1%
- - Pediatrician: 94900, 8.62%, 9.44%
- - Plastic Surgeons: 5399, 0.49%, 0.54%
- - Psychiatrist / Neurologist: 79721, 7.25%, 7.93%
- - Radiologist: 51685, 4.7%, 5.14%
- - Surgeons: 42585, 3.87%, 4.24%
- - Urologist: 13019, 1.18%, 1.29%
- - Optometrist: 56239, 5.11%, 5.6%
 
+Based on the description of U.S. Physicians Database which combines all of the individual state databases into one national database and covers every city and state with a registered physician, we can extract the distribution of active physicians by specialty (18 specialties).
+
+ - Allergist / Immunologist: 4551, 0.45%
+ - Anesthesiologist: 57300, 5.7%
+ - Dermatologist: 15275, 1.52%
+ - Emergency Doctor: 60090, 5.98%
+ - Family Doctor: 140732, 14%
+ - Internist: 260257, 25.9%
+ - Neurological Surgeon: 7296, 0.73%
+ - Obstetrician / Gynecologist: 51916, 5.17% 
+ - Orthopedic Surgeon: 32777, 3.26%
+ - Otolaryngologist: 12971, 1.29%
+ - Pathologist: 21153, 2.1%
+ - Pediatrician: 94900, 9.44%
+ - Plastic Surgeons: 5399, 0.54%
+ - Psychiatrist / Neurologist: 79721, 7.93%
+ - Radiologist: 51685, 5.14%
+ - Surgeons: 42585, 4.24%
+ - Urologist: 13019, 1.29%
+ - Optometrist: 56239, 5.6%
+ 
+[Source:](https://github.com/facebook/react/wiki/Sites-Using-React)
 
 4) States:  (54 possible values)
 
