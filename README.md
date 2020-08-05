@@ -24,7 +24,7 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  - 22.9% of population is age range 46-55
  - 29% of population is age range 56-65
  - 17% of population is age range 66-75
- ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG )
+ ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG| width=100)
  
  
 #### Specialities : There are 1.1 million (1 100 000) doctors in USA
