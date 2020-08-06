@@ -220,12 +220,13 @@ Assuming strong ignorability we are basically assuming that our covariate set X 
 
 ##### Propensity score
 
-By predicting Z based on X, we have estimated the propensity score, i.e. p(Z=1|x). This of course assumes that we have used a classification method that returns probabilities for the classes Z=1 and Z=0. Let <img src="https://latex.codecogs.com/svg.latex? e_{i}=p(Z=1|x_{i})" />  be the propensity score of the i-th observation, i.e. the propensity of the i-th physician living under the stressor (Z=1). 
+By predicting Z based on X, we have estimated the propensity score, i.e. p(Z=1|x). This of course assumes that we have used a classification method that returns probabilities for the classes Z=1 and Z=0. Let <img src="https://latex.codecogs.com/svg.latex?e_{i}=p(Z=1|x_{i})" />  be the propensity score of the i-th observation, i.e. the propensity of the i-th physician living under the stressor (Z=1). 
 
 We can use the propensity score to define weights wi to create a synthetic sample in which the distribution of measured baseline covariates is independent of stressor assignment, i.e.
-            <img src="https://latex.codecogs.com/svg.latex?w_{i}=\frac{z_{i}}{e_{i}}+\frac{1-z_{i}}{1-e_{i}}" />
 
-The covariates from our data sample xi are then weighted by wi to eliminate the correlation between X and Z, which is a technique known as inverse probability of treatment weighting (IPTW). This allows us to estimate the causal effect via the following approach:
+   <img src="https://latex.codecogs.com/svg.latex?w_{i}=\frac{z_{i}}{e_{i}}+\frac{1-z_{i}}{1-e_{i}}" />
+
+The covariates from our data sample <img src="https://latex.codecogs.com/svg.latex?x_{i}" /> are then weighted by wi to eliminate the correlation between X and Z, which is a technique known as inverse probability of treatment weighting (IPTW). This allows us to estimate the causal effect via the following approach:
 
 1. Train a model with covariates X to predict Z,
 2. calculate the propensity scores <img src="https://latex.codecogs.com/svg.latex?e_{i}" /> by applying the trained model to all <img src="https://latex.codecogs.com/svg.latex?x_{i}" />,
