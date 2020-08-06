@@ -202,9 +202,9 @@ In the field of machine learning and particularly in supervised learning, correl
 This outline the need for methods to estimate the actual causal effect of a controllable covariate onto the response. The question remains how can we estimate the causal effect of a controllable covariate?
 
 ##### Strongly ignorable 
-The effect of stressors can be determined in a randomized trial by comparing the response of a stressor group to a control group. In a randomized trial, the allocation of physicians how are living under this stressor or control group is random and thus independent of any covariates X. In a randomized trial the stressor assignment Z and the (unobservable) potential outcomes Y1,Y0 are conditionally independent given the covariates X, i.e.
+The effect of stressors can be determined in a randomized trial by comparing the response of a stressor group to a control group. In a randomized trial, the allocation of physicians how are living under this stressor or control group is random and thus independent of any covariates **X** . In a randomized trial the stressor assignment **Z** and the (unobservable) potential outcomes Y1, Y0 are conditionally independent given the covariates **X**, i.e.
 
-Y1,Y0⫫Z∣X.
+Y1,Y0⫫Z∣X. <img src="https://latex.codecogs.com/svg.latex?\Large&space;Y_{1}" />
 Furthermore, we assume that each physician has a chance to live under each stressor, i.e. 0<p(Z=1|x)<1. The stressor assignment is said to be strongly ignorable if those two conditions hold for our observed covariates x.
 
 
