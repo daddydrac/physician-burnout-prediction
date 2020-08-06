@@ -68,6 +68,14 @@ The graph below shows the average annual physicians compensation by specialty re
 
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/annual-compenstation.png)
 
+##### Working hours spent on patient care
+
+Based on the average number of hours per week spent by phyisicans seeing patients for each gender, we can generate the working hours per week spent seeing patients by gender considering a variance of 50% compared to the average number of each gender.
+
+The graph below shows the average number of hours per week spent by phyisicans seeing patients by gender reported in 2019.
+
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/work_hours_patient.PNG)
+
 #### Relevant burned out statistics observed in physicians, US
 
 In 2020, 42% of physicians reported that they burned out down from 46% 5 years ago.
@@ -81,11 +89,13 @@ During the burnout study, we will use 3 age groups of physicians:
 - baby boomers(55-73 years old)
 
 Based on the graph below, the Generation X physicians report noticeably more burnout than other groups.
+
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-by-age-range.png)
  
 #####  Which gender is most burned out ?
 Women have consistently reported higher percentages of burnout than men over the years.
 The graph below shows the proportions of physicians burnout by gender in 2019.
+
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-by-gender.png)
 
 #####  Which specialties are most burned out ?
