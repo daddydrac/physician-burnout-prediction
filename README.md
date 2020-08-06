@@ -194,9 +194,13 @@ The severity of this stressor can be divided into three levels within this popul
 - Medium: 40%
 - Low: 40%
 
+#### Prediciting Physician Burnout and Propensity Score with Causal Inference
 
+In the field of machine learning and particularly in supervised learning, correlation is crucial to predict the target variable with the help of the feature variables. Rarely do we think about causation and the actual effect of a single feature variable or covariate on the target or response. In our study we want to predict the physicians burnout which is our target based on stressors (covarites) that are correlated to the target, meaning we want to focus on physicians who are are probably going to burnout and how severe is their burnout considering that they are living under at least one stressor.
 
+This outline the need for methods to estimate the actual causal effect of a controllable covariate onto the response. The question remains how can we estimate the causal effect of a controllable covariate?
 
+##### Strongly ignorable 
 
 
 
