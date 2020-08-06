@@ -24,6 +24,7 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  - 22.9% of population is age range 46-55
  - 29% of population is age range 56-65
  - 17% of population is age range 66-75
+ 
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG)
  
  ##### Gender
@@ -78,7 +79,7 @@ The graph below shows the average number of hours per week spent by phyisicans s
 
 ##### Self esteem by specialty
 
-Based on the graph below that shows which specialties have the highest self esteem, we can generate a binary variable describing physicians self esteem as High or Low for each specialties.
+Based on the graph below that shows which specialties have the highest self esteem, we can generate a variable describing physicians self esteem as High, Midum or Low for each specialties.
 
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/self_esteem_by_specialty.PNG)
 
@@ -201,14 +202,32 @@ In the field of machine learning and particularly in supervised learning, correl
 This outline the need for methods to estimate the actual causal effect of a controllable covariate onto the response. The question remains how can we estimate the causal effect of a controllable covariate?
 
 ##### Strongly ignorable 
+The effect of stressors can be determined in a randomized trial by comparing the response of a stressor group to a control group. In a randomized trial, the allocation of physicians how are living under this stressor or control group is random and thus independent of any covariates X. In a randomized trial the stressor assignment Z and the (unobservable) potential outcomes Y1,Y0 are conditionally independent given the covariates X, i.e.
+
+Y1,Y0⫫Z∣X.
+Furthermore, we assume that each physician has a chance to live under each stressor, i.e. 0<p(Z=1|x)<1. The stressor assignment is said to be strongly ignorable if those two conditions hold for our observed covariates x.
 
 
+##### Causal effect in a randomized trial
+
+In a randomized trial, the strong ignorability of Z allows us to estimate the effect of a stressor by comparing the response of the stressor group with that of the control group. 
+
+1. Train the model with the covariates X and Z as feature and response Y as target,
+2. predict for a given x the response y^1 with Z=1 and y^0 with Z=0,
+3. calculate the effect with y^1−y^0 or y^1y^0.
+
+Assuming strong ignorability we are basically assuming that our covariate set X is admissible. In practice, the assumption of admissibility of X is often used to estimate a causal effect. This led to incorrect results in some studies , so one should always be aware that the entire causal analysis depends on the validity of this assumption.
+
+##### Propensity score
+
+By predicting Z based on X, we have estimated the propensity score, i.e. p(Z=1|x). This of course assumes that we have used a classification method that returns probabilities for the classes Z=1 and Z=0. Let ei=p(Z=1|xi) be the propensity score of the i-th observation, i.e. the propensity of the i-th physician living under the stressor (Z=1).
+
+We can use the propensity score to define weights wi to create a synthetic sample in which the distribution of measured baseline covariates is independent of stressor assignment, i.e.
 
 
+The covariates from our data sample xi are then weighted by wi to eliminate the correlation between X and Z, which is a technique known as inverse probability of treatment weighting (IPTW). This allows us to estimate the causal effect via the following approach:
 
-
-
-
-
-
-
+1. Train a model with covariates X to predict Z,
+2. calculate the propensity scores ei by applying the trained model to all xi,
+3. train a second model with covariates X and Z as features and response Y as target by using wi as sample weight for the i-th observation,
+4. use this model to predict the causal effect like in the randomized trial approach.
