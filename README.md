@@ -169,7 +169,7 @@ The severity of this stressor can be divided into three levels within this popul
 - Low: 40%
 
 ###### Feeling like a cog in a wheel 
-22% of the physicians who reported burnout noted Feeling like a cog in a wheel noted as a stressor.
+22% of the physicians who reported burnout noted Feeling like a cog in a wheel which refers to having low self esteem noted as a stressor.
 The severity of this stressor can be divided into three levels within this population as follows:
 - High: 20% 
 - Medium: 40%
