@@ -12,7 +12,7 @@ Using causal inference to improve upon the results of previous physician burn ou
 | hela@aktiver.io | joe@aktiver.io | greg@aktiver.io |
 
 
-#### Data description:
+#### Data description
 The following are the features that can be found in the dataset of physicians in the USA as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
 
 
@@ -26,7 +26,7 @@ As of 2018, the largest distribution of U.S. physicians was between the ages of 
  - 17% of population is age range 66-75
  ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/active_physicians_by_age.PNG)
  
- ##### Gender: 
+ ##### Gender
  Based on  the distribution of active physicians by age group (4 groups) for each gender in USA, we can generate successfuly the gender of physicians for this study.
  
  The graph shows the percentage of active physicians by age group for each gender in 2017.
@@ -61,7 +61,7 @@ Based on the description of U.S. Physicians Database which combines all of the i
 [Source:] https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0KCQjwvIT5BRCqARIsAAwwD-TfZkr9UJ1cTGAZjmXqdE1IiX_PklVG9q5W6hDxeMcBlLdecIR4AswaAvMmEALw_wcB
 
 
-##### Compensation : 
+##### Compensation 
 
 Based on the average annual physicians compensation, we can generate the salary of physicians by gender for each specialties considering that women earned 30% less than men overall and a variance of 10% compared to the average salary of each gender.
 The graph below shows the average annual physicians compensation by specialty reported in 2019.
@@ -93,22 +93,90 @@ Specialties that were among the top in burnout in 2019:
 - Urolgy
 - Neurolgy
 Following is a bar chart describing burnout cases per specialty during the year of 2019.
+
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout.png)
 
 ##### Where are physicians most burned Out?
 
 Solo practice has been declining over the years and now comprises only about 15% of physicians.
 The graph below shows where are physicians most burned out.
+
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-by-specialty.png)
 
 ##### What contributes most to burnout?
 
 There are several factors that have been contributing to physician burnout in US over years.
-The graph below shows the contributor factors according to physcians who reported burnout knowing that a respondent could select more than one contributor variable
+The graph below shows the contributor factors according to physcians who reported burnout knowing that a respondent could select more than one stressor.
+
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/burnout-factors.png)
 
-###### Bureaucratic tasks
+###### Bureaucratic task
 
+Over half(55%) chose an excess of bureaucratic tasks as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20%
+- Medium: 40%
+- Low: 40%
+
+###### long hours at work
+
+More than one third noted(33%) too many hours at work as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+###### Lack of respect from adminisrators, employers, colleagues or staff
+32% of the physicians who reported burnout noted lack of respect from adminisrators, employers, colleagues or staff as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+
+###### Increasing computerization of practice(EHRs)
+30% of the physicians who reported burnout noted increasing computerization of practice(EHRs) as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+###### Insufficient compensation,reimbursement
+29% of the physicians who reported burnout noted insufficient compensation or reimbursement as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+###### Lack of control, autonomy
+24% of the physicians who reported burnout noted lack of control and autonomy as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+
+###### Feeling like a cog in a wheel 
+22% of the physicians who reported burnout noted Feeling like a cog in a wheel noted as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+###### Decreasing reimbursements
+
+19% of the physicians who reported burnout noted decreasing reimbursements as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+###### Lack of respect from patients
+
+17% of the physicians who reported burnout noted Lack of respect from patients as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
+###### Government regulations
+16% of the physicians who reported burnout noted Government regulations as a stressor.
+The severity of this stressor can be divided into three levels within this population as follows:
+- High: 20% 
+- Medium: 40%
+- Low: 40%
 
 
 
