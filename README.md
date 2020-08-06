@@ -16,7 +16,7 @@ Using causal inference to improve upon the results of previous physician burn ou
 The following are the features that can be found in the dataset of physicians in the USA as well as the values they can take. This features will be generated later on respecting real life statistics in order to mimic real life cases. There exists correlation between the mentioned attributes, this correlation has to be implemented while generation data in order to guarantee the veracity of the output data.
 
 
-##### Age: 4 age groups
+##### Age: 5 age groups
 As of 2018, the largest distribution of U.S. physicians was between the ages of 55 and 65 years old. At that time about 29 percent of physicians fell within this age group. With just 11.2 percent of all physicians, the smallest distribution of U.S. physicians was among those aged 35 years or younger.
 
  - 11.2% of population is age range from 25-35
@@ -59,7 +59,7 @@ Based on the description of U.S. Physicians Database which combines all of the i
  - Urologist: 13019, 1.29%
  - Optometrist: 56239, 5.6%
  
-[Source:] https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0KCQjwvIT5BRCqARIsAAwwD-TfZkr9UJ1cTGAZjmXqdE1IiX_PklVG9q5W6hDxeMcBlLdecIR4AswaAvMmEALw_wcB
+Source:  https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0KCQjwvIT5BRCqARIsAAwwD-TfZkr9UJ1cTGAZjmXqdE1IiX_PklVG9q5W6hDxeMcBlLdecIR4AswaAvMmEALw_wcB
 
 
 ##### Compensation 
@@ -232,3 +232,13 @@ The covariates from our data sample <img src="https://latex.codecogs.com/svg.lat
 2. calculate the propensity scores <img src="https://latex.codecogs.com/svg.latex?e_{i}" /> by applying the trained model to all <img src="https://latex.codecogs.com/svg.latex?x_{i}" />,
 3. train a second model with covariates X and Z as features and response Y as target by using <img src="https://latex.codecogs.com/svg.latex?w_{i}" /> as sample weight for the i-th observation,
 4. use this model to predict the causal effect like in the randomized trial approach.
+
+
+
+#### References: 
+
+1. https://www.medscape.com/slideshow/2019-compensation-overview-6011286
+2. https://www.medscape.com/slideshow/2020-lifestyle-happiness-6012424
+3. https://www.medscape.com/slideshow/2020-lifestyle-burnout-6012460
+4. https://cxl.com/blog/customer-lifetime-value/
+5. https://florianwilhelm.info/2017/04/causal_inference_propensity_score/
