@@ -76,6 +76,12 @@ The graph below shows the average number of hours per week spent by phyisicans s
 
 ![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/work_hours_patient.PNG)
 
+##### Self esteem by specialty
+
+Based on the graph below that shows which specialties have the highest self esteem, we can generate a binary variable describing physicians self esteem as High or Low for each specialties.
+
+![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/self_esteem_by_specialty.PNG)
+
 #### Relevant burned out statistics observed in physicians, US
 
 In 2020, 42% of physicians reported that they burned out down from 46% 5 years ago.
