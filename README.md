@@ -202,32 +202,32 @@ In the field of machine learning and particularly in supervised learning, correl
 This outline the need for methods to estimate the actual causal effect of a controllable covariate onto the response. The question remains how can we estimate the causal effect of a controllable covariate?
 
 ##### Strongly ignorable 
-The effect of stressors can be determined in a randomized trial by comparing the response of a stressor group to a control group. In a randomized trial, the allocation of physicians how are living under this stressor or control group is random and thus independent of any covariates **X** . In a randomized trial the stressor assignment **Z** and the (unobservable) potential outcomes <img src="https://latex.codecogs.com/svg.latex?Y_{1}" />, <img src="https://latex.codecogs.com/svg.latex?Y_{0}" /> are conditionally independent given the covariates **X**, i.e.
+The effect of stressors can be determined in a randomized trial by comparing the response of a stressor group to a control group. In a randomized trial, the allocation of physicians how are living under this stressor or control group is random and thus independent of any covariates X. In a randomized trial the stressor assignment Z and the (unobservable) potential outcomes <img src="https://latex.codecogs.com/svg.latex?Y_{1}" />, <img src="https://latex.codecogs.com/svg.latex?Y_{0}" /> are conditionally independent given the covariates X, i.e.
           <img src="https://latex.codecogs.com/svg.latex?Y_{1},Y_{0} \amalg Z|X" />
 
-Furthermore, we assume that each physician has a chance to live under each stressor, i.e. **0<p(Z=1|x)<1**. The stressor assignment is said to be strongly ignorable if those two conditions hold for our observed covariates **x**.
+Furthermore, we assume that each physician has a chance to live under each stressor, i.e. 0<p(Z=1|x)<1. The stressor assignment is said to be strongly ignorable if those two conditions hold for our observed covariates x.
 
 
 ##### Causal effect in a randomized trial
 
-In a randomized trial, the strong ignorability of **Z** allows us to estimate the effect of a stressor by comparing the response of the stressor group with that of the control group. 
+In a randomized trial, the strong ignorability of Z allows us to estimate the effect of a stressor by comparing the response of the stressor group with that of the control group. 
 
-1. Train the model with the covariates **X** and **Z** as feature and response **Y** as target,
-2. predict for a given **x** the response <img src="https://latex.codecogs.com/svg.latex?\hat{y}_{1}" /> with **Z=1** and <img src="https://latex.codecogs.com/svg.latex?\hat{y}_{1}" /> with **Z=0**,
+1. Train the model with the covariates X and Z as feature and response Y as target,
+2. predict for a given x the response <img src="https://latex.codecogs.com/svg.latex?\hat{y}_{1}" /> with Z=1 and <img src="https://latex.codecogs.com/svg.latex?\hat{y}_{1}" /> with Z=0,
 3. calculate the effect with <img src="https://latex.codecogs.com/svg.latex?\hat{y}_{1}-\hat{y}_{0}" />  or <img src="https://latex.codecogs.com/svg.latex?\frac{\hat{y}_{1}}{\hat{y}_{0}}" /> .
 
-Assuming strong ignorability we are basically assuming that our covariate set **X** is admissible. In practice, the assumption of admissibility of **X** is often used to estimate a causal effect. This led to incorrect results in some studies , so one should always be aware that the entire causal analysis depends on the validity of this assumption.
+Assuming strong ignorability we are basically assuming that our covariate set X is admissible. In practice, the assumption of admissibility of X is often used to estimate a causal effect. This led to incorrect results in some studies , so one should always be aware that the entire causal analysis depends on the validity of this assumption.
 
 ##### Propensity score
 
-By predicting **Z** based on **X**, we have estimated the propensity score, i.e. **p(Z=1|x)**. This of course assumes that we have used a classification method that returns probabilities for the classes **Z=1** and **Z=0**. Let <img src="https://latex.codecogs.com/svg.latex? e_{i}=p(Z=1|x_{i})" />  be the propensity score of the **i-th** observation, i.e. the propensity of the **i-th** physician living under the stressor **(Z=1)**. 
+By predicting Z based on X, we have estimated the propensity score, i.e. p(Z=1|x). This of course assumes that we have used a classification method that returns probabilities for the classes Z=1 and Z=0. Let <img src="https://latex.codecogs.com/svg.latex? e_{i}=p(Z=1|x_{i})" />  be the propensity score of the i-th observation, i.e. the propensity of the i-th physician living under the stressor (Z=1). 
 
 We can use the propensity score to define weights wi to create a synthetic sample in which the distribution of measured baseline covariates is independent of stressor assignment, i.e.
             <img src="https://latex.codecogs.com/svg.latex?w_{i}=\frac{z_{i}}{e_{i}}+\frac{1-z_{i}}{1-e_{i}}" />
 
-The covariates from our data sample xi are then weighted by wi to eliminate the correlation between **X** and **Z**, which is a technique known as inverse probability of treatment weighting (IPTW). This allows us to estimate the causal effect via the following approach:
+The covariates from our data sample xi are then weighted by wi to eliminate the correlation between X and Z, which is a technique known as inverse probability of treatment weighting (IPTW). This allows us to estimate the causal effect via the following approach:
 
-1. Train a model with covariates **X** to predict **Z**,
+1. Train a model with covariates X to predict Z,
 2. calculate the propensity scores <img src="https://latex.codecogs.com/svg.latex?e_{i}" /> by applying the trained model to all <img src="https://latex.codecogs.com/svg.latex?x_{i}" />,
-3. train a second model with covariates **X** and **Z** as features and response **Y** as target by using <img src="https://latex.codecogs.com/svg.latex?w_{i}" /> as sample weight for the **i-th** observation,
+3. train a second model with covariates X and Z as features and response Y as target by using <img src="https://latex.codecogs.com/svg.latex?w_{i}" /> as sample weight for the i-th observation,
 4. use this model to predict the causal effect like in the randomized trial approach.
