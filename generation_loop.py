@@ -62,15 +62,6 @@ for i in range(len(create_doctors)):
     stressor_h(i, create_doctors)
     stressor_i(i, create_doctors)
     stressor_j(i, create_doctors)
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 print(json.dumps(create_doctors, indent=2))
 
