@@ -1,5 +1,9 @@
 import json
+import codecs
 import random
+import pydash as _
+from random import seed
+from random import randint
 from gender_by_age import gender_age
 from data_utils import \
      specialties, \
@@ -8,14 +12,15 @@ from data_utils import \
      employment_status, \
      antistress_program, \
      stressor_a, \
-     stresoor_b, \
+     stressor_b, \
+     stresoor_c, \
      stressor_d, \
-     stressor_d, \
+     stressor_e, \
      stressor_f, \
      stressor_g, \
      stressor_h, \
      stressor_i, \
-     stressor_j, \
+     stressor_j \
 
 
 
@@ -63,5 +68,6 @@ for i in range(len(create_doctors)):
     stressor_i(i, create_doctors)
     stressor_j(i, create_doctors)
 
-print(json.dumps(create_doctors, indent=2))
+with codecs.open('create_doctors.json', 'w', 'utf8') as f:
+     f.write(json.dumps(create_doctors, indent=2))
 
