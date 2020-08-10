@@ -1,3 +1,5 @@
+import random
+import pydash as _
 def stressor_a(_idx, _data):
     _scope = {
         "stressor_a": None,
