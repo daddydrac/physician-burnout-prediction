@@ -6,10 +6,10 @@ Using causal inference to improve upon the results of previous physician burn ou
 
 #### Researchers:
 
-| Hela Bahria, Sr. Data Scientist  | Joe Hoeller, Data Scientist I | Greg Chase, Sr. Data Scientist |
+|   |  |  |
 | ------------- | ------------- | ---------------- |
 | M.S. in Engineering in statistics, Data Analysis & Physics  | Deep Learning & Software Engineer  | Acclerated GPU Computing Expert |
-| hela@aktiver.io | joe@aktiver.io | greg@aktiver.io |
+|  |  | o |
 
 
 #### Data description
@@ -67,7 +67,7 @@ Source:  https://doctordatabase.co/database/united-states-physicians/?gclid=Cj0K
 Based on the average annual physicians compensation, we can generate the salary of physicians by gender for each specialties considering that women earned 30% less than men overall and a variance of 10% compared to the average salary of each gender.
 The graph below shows the average annual physicians compensation by specialty reported in 2019.
 
-![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/annual-compenstation.png)
+
 
 ##### Working hours spent on patient care
 
@@ -75,7 +75,7 @@ Based on the average number of hours per week spent by phyisicans seeing patient
 
 The graph below shows the average number of hours per week spent by phyisicans seeing patients by gender reported in 2019.
 
-![Alt text](https://github.com/joehoeller/physician-burnout-prediction/blob/feature/stressors/misc/work_hours_patient.PNG)
+
 
 ##### Self esteem by specialty
 
